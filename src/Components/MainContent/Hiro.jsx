@@ -7,7 +7,7 @@ import {Button} from "@heroui/react";
 
 function Hiro() {
     return (
-        <section className="bg-[url('./Images/hero.png')] w-full  bg-no-repeat bg-cover h-[100vh]  overflow-hidden mx-auto ">
+        <section className="bg-[url('/Images/hero.png')] w-full  bg-no-repeat bg-cover h-[100vh]  overflow-hidden mx-auto ">
             <div className='md:w-[794px] md:pl-10 flex flex-col gap-8 mt-10 justify-center items-center md:items-start px-10'>
                 <h1 className='text-2xl md:text-6xl w-2xl font-bold text-white text-center md:text-start'>Find amazing things to do anytime, anywhere in Lagos.</h1>
                 <div className='md:w-[726px] h-114px rounded-[8px] p-7 bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center gap-5'>
