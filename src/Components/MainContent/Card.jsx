@@ -18,8 +18,12 @@ function ImageCard() {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[1240px] '>
             {imgCardInfo.map(({img, title}, i) => (
                 <div key={i} className='flex  flex-col justify-center items-center '>
-                    <img className='' src={img} alt="" />
-                    <span className='text-xl font-semibold'>{title}</span>
+                   
+                      <img className='w-full object-cover h-[500px] lg:h-[650px]' src={img} alt="" />
+                  
+                    <div>
+                      <span className='text-xl font-semibold'>{title}</span>
+                    </div>
                 </div>
             ))}
         </div>
