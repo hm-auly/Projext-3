@@ -75,34 +75,34 @@ const FooterLink3 = [
 
 const FooterLink2 = [
   {
-    link:" Start Here",
+    link: " Start Here",
     linkadd: "#"
   },
   {
-    link:" Pay with Crypto",
+    link: " Pay with Crypto",
     linkadd: "#"
   },
   {
-    link:"Style Guide",
+    link: "Style Guide",
     linkadd: "#"
   },
   {
-    link:" Password Protected",
+    link: " Password Protected",
     linkadd: "#"
   },
   {
-    link:" 404 Not Found",
+    link: " 404 Not Found",
     linkadd: "#"
   },
   {
-    link:" Licenses",
+    link: " Licenses",
     linkadd: "#"
   },
   {
-    link:" Changelog",
+    link: " Changelog",
     linkadd: "#"
   },
- 
+
 ];
 
 const pertner = [
@@ -121,7 +121,7 @@ function Footer() {
 
   return (
     <section className='md:w-[1440px] container mx-auto py-10 px-5'>
-      <div className='grid gap-5 grid-cols-1 md:grid-cols-4 '>
+      <div className='grid md:gap-0 gap-5 grid-cols-1 md:grid-cols-4 '>
 
         {/* left div */}
         <div className='justify-self-start'>
@@ -139,52 +139,49 @@ function Footer() {
           </div>
         </div>
         {/* responsiv */}
-        <div className='flex flex-col-reverse gap-5 md:flex-row justify-around col-span-3'>  
-        {/* center div */}
-        <div className='flex gap-16'>
+        <div className='flex flex-col-reverse gap-5 md:flex-row justify-around col-span-3'>
+          {/* center div */}
+          <div className='flex gap-16'>
 
-          <div className=''>
-            <h6 className='font-bold'>Menu</h6>
-            <hr  className='h-2 mt-5 mb-3'/>
-<div className='flex justify-between'>
             <div className=''>
-            {FooterLink.map(({link2,  link3, linkadd }, i) => (
-              <div key={i} className=' flex'>
-                <div className='grid grid-cols-2  '>
-                    <div className='flex justify-start items-center '>
-                      <a className='leading-7 text-[#656B89]' href={linkadd}>{link2}</a>
+              <h6 className='font-bold'>Menu</h6>
+              <hr className='h-2 mt-5 mb-3' />
+              <div className='flex justify-between'>
+                <div className=''>
+                  {FooterLink.map(({ link2, link3, linkadd }, i) => (
+                    <div key={i} className=' flex'>
+                      <div className='grid grid-cols-2  '>
+                        <div className='flex justify-start items-center '>
+                          <a className='leading-7 text-[#656B89]' href={linkadd}>{link2}</a>
+                        </div>
+                      </div>
                     </div>
-                    {/* <div className='flex justify-start items-start  '>
-                      <a  href={linkadd}>{link3}</a>
-                    </div> */}
+                  ))}
+                </div>
+                <div>
+                  {FooterLink3.map(({ link3, linkadd }, i) => (
+                    <div key={i}>
+                      <a className='leading-7 text-[#656B89]' href={linkadd}>{link3}</a>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-          <div>
-            {FooterLink3.map(({link3, linkadd},i) => (
-              <div key={i}>
-                <a className='leading-7 text-[#656B89]' href={linkadd}>{link3}</a>
-              </div>
-            ))}
-          </div>
-          </div>
-          </div>
+            </div>
 
-          <div>
-            <h6 className='font-bold'>Utility Pages</h6>
-            <hr  className='h-2 mt-5 mb-3'/>
-            {FooterLink2.map(({link, linkadd}, i) => (
-              <div key={i}>
-                <a className='leading-7 text-[#656B89]' href={linkadd}>{link}</a>
-              </div>
-            ))}
+            <div>
+              <h6 className='font-bold'>Utility Pages</h6>
+              <hr className='h-2 mt-5 mb-3' />
+              {FooterLink2.map(({ link, linkadd }, i) => (
+                <div key={i}>
+                  <a className='leading-7 text-[#656B89]' href={linkadd}>{link}</a>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-    {/* right div */}
-        <div>
+          {/* right div */}
+          <div>
             <div className='lg:w-[288px] h-[313px] py-7 px-6 bg-[#F5FAFF] rounded-sm'>
-              {pertner.map(({img, head, des, btn}, i) => (
+              {pertner.map(({ img, head, des, btn }, i) => (
                 <div key={i}>
                   <img src={img} alt="" />
                   <div>
@@ -195,8 +192,8 @@ function Footer() {
                 </div>
               ))}
             </div>
+          </div>
         </div>
-      </div>
 
 
       </div>

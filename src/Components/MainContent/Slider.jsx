@@ -102,9 +102,9 @@ function MySlider() {
                         </button>
                     </div>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='flex gap-1 pt-5 justify-center items-center'>
                     {sliderInfo.map((_, index) => (
-                      <div className='flex gap-3'>
+                      <div className=''>
                           <button onClick={() => henclick(index)} className={`h-2 w-2 block  rounded-full ${index === curent ? "bg-blue-600" : "bg-gray-500"}`}>
 
                             </button>
